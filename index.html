@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Módulo I - Primeiros Passos com HTML</title>
+</head>
+<body>
+    <h1>Módulo 1 - Primeiros Passos com HTML</h1>
+<hr />
+
+<!-- Menu de Navegação -->
+
+<h2><i>Índice</i></h2>
+<ul>
+  <li><a href="#historia-computadores">História dos computadores</a></li>
+  <li><a href="#clients">O que são <i>Clients</i>?</a></li>
+  <li><a href="#servers">O que são <i>Servers</i>?</a></li>
+  <li><a href="#estrutura-html">Como é uma estrutura básica de um HTML?</a></li>
+  <li><a href="#listas">Entendendo a diferença entre listas ordenadas e não ordenadas</a></li>
+</ul>
+
+<!-- História -->
+<h3 id="historia-computadores">História dos computadores</h3>
+<p>
+  O primeiro computador surgiu em 1931 como uma máquina que realizava cálculos de forma automatizada. O computador foi desenvolvido por Vannevar Bush, através de uma pesquisa feita dentro de um centro de ciência e tecnologia, nos Estados Unidos.
+  Este primeiro computador realizava funções muito restritas, mas estava muito além do seu tempo. Seu sistema era analógico, como por exemplo a função de uma calculadora, no entanto ele permitia a inclusão de números, para que fossem executadas sequências numéricas infinitas.
+  No entanto ele era propenso a muitos erros, neste momento começa a ser utilizado o Sistema Binário de George Boole. O sistema binário de Boole é uma lógica, onde o computador conseguia fazer a leitura de número de 0 a 1, números fora desta sequência eram descartados pelo computador. O sistema binário de Boole tornou possível o desenvolvimento de microprocessadores.
+</p>
+
+<figure>
+  <blockquote cite="https://www.pensador.com/frases_de_computador/">
+    <p>Meus filhos terão computadores, sim, mas antes terão livros. Sem livros, sem leitura, os nossos filhos serão incapazes de escrever – inclusive a sua própria história.</p>
+  </blockquote>
+  <figcaption> -Bill Gates</figcaption>
+</figure>
+
+<!-- Clients -->
+<h3 id="clients">O que são <i>Clients</i>?</h3>
+<p>É um termo empregado em computação e representa uma entidade que consome os serviços de uma outra entidade servidora, em geral através do uso de uma rede de computadores numa arquitetura cliente-servidor</p>
+
+<!-- Servers -->
+<h3 id="servers">O que são <i>Servers</i>?</h3>
+<p>
+    É um software ou computador, com sistema de computação centralizada que fornece serviços a uma rede de computadores, chamada de cliente.
+    Esses serviços podem ser de naturezas distintas, como por exemplo, arquivos e correio eletrônico.
+    Esta arquitetura é chamada de modelo cliente-servidor, é utilizada em redes de médio e grande porte (com muitas máquinas) e em redes onde a questão da segurança desempenha um papel de grande importância. O termo servidor é amplamente aplicado a computadores completos, embora um servidor possa equivaler a um software ou a partes de um sistema computacional, ou até mesmo a uma máquina que não seja necessariamente um computador.
+    Os servidores podem fornecer várias funcionalidades, muitas vezes chamado de "serviços", tais como a partilha de dados ou de recursos do sistema entre vários clientes, ou computação desempenho para um cliente. Um único servidor pode servir vários clientes, e um único cliente pode usar vários servidores. Um processo cliente pode ser executado no mesmo dispositivo ou pode se conectar através de uma rede para um servidor em um dispositivo diferente.
+</p>
+
+<!-- Estrutura HTML -->
+<h3 id="estrutura-html">Como é uma estrutura básica de um HTML?</h3>
+<p>Iremos analisar um pouco sobre como é estruturado um HTML e falar também sobre o que esta associado a essa estrutura:</p>
+
+<h4>Inspetor de Elementos</h4>
+<p>É um utilitário que permite visualizar o código-fonte subjacente de qualquer página web. Além disso, você pode usá-la para fazer alterações temporárias e ver os resultados em tempo real, deixando o código-fonte original intacto. </p>
+
+<h4>Estrutura Básica do HTML</h4>
+
+<p>Veja abaixo a estrutura básica do HTML:</p>
+
+<pre>
+  
+  &lt;!DOCTYPE html&gt;
+  &lt;html lang="pt-br"&gt;
+    &lt;head&gt;
+        &lt;title&gt;Título da página&lt;/title&gt;
+        &lt;meta charset="utf-8"&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        Aqui vai o código HTML que fará seu site aparecer.
+    &lt;/body&gt;
+  &lt;/html&gt;
+ 
+</pre>
+
+<h5>Mais sobre as tags do HTML</h5>
+<p>As tags são usadas para informar ao navegador a estrutura do site. Ou seja: quando se escreve um código em HTML, as tags serão interpretadas pelo navegador, produzindo assim a estrutura e o conteúdo visual da página.
+
+  A principal característica das tags é estarem sempre dentro dos sinais de chevron (sinal de “maior que” e “menor que”), ou seja: "< >".<br>
+  
+  As tags HTML são divididas em dois tipos: as que precisam de fechamento e as que não precisam de fechamento. As tags que precisam de fechamento possuem a sintaxe <tag> </tag>, já as que não precisam de fechamento possuem como estrutura <tag/>.
+  
+  Além disso, uma mesma tag pode receber um ou mais atributos, que possuirá um valor que modifica sua estrutura ou funcionalidade.</p>
+
+  <h6>Atributos das Tags</h6>
+  <p>Os atributos são usados para personalizar as tags, modificando sua estrutura ou funcionalidade. Igualmente, os atributos são utilizados para atribuir uma classe ou id a um elemento.</p>
+
+<h6>Cabeçalhos</h6>
+
+<h1>Esse é um título</h1>
+
+<h2>Esse é um título</h2>
+
+<h3>Esse é um título</h3>
+
+<h4>Esse é um título</h4>
+
+<h5>Esse é um título</h5>
+
+<h6>Esse é um título</h6>
+
+<h6>Algumas tags mais usadas</h6>
+<p>O elemento &lt;mark&gt; é usado para <mark>destacar</mark> partes do texto</p>
+
+<p>
+  Esta é a primeira frase.
+  <small>Esta frase inteira está em letras minúsculas.</small>
+</p>
+
+<p>A frase latina <i lang="la">Veni, vidi, vici</i> é frequentemente mencionada na música, arte e literatura.</p>
+
+<p>Este parágrafo inclui uma palavra com grafia <u class="spelling">errada</u>.</p>
+
+<p>Usando a tag sub: H<sub>2</sub>O</p>
+
+<p>E agora a sup: <strong>E=m<var>c<sup>2</sup></var></strong></p>
+
+<!-- Listas -->
+<h3 id="listas">Entendendo a diferença entre listas ordenadas e não ordenadas</h3>
+<p>A principal diferença entre a lista ordenada e a lista não-ordenada está na maneira com que os itens de cada lista são apresentados - a lista ordenada enumera os elementos; a lista não-ordenada coloca marcadores antes de cada elemento.</p>
+
+<table>
+  <tr>
+    <th style="background-color: gray">Lista ordenadas</th>
+    <th style="background-color: gray">Lista não ordenadas</th>
+  </tr>
+  <tr>
+    <td>
+      <ol>
+        <li>Item 01</li>
+        <li>Item 02</li>
+        <li>Item 03</li>
+      </ol>
+    </td>
+    <td>
+      <ul>
+        <li>Item 01</li>
+        <li>Item 02</li>
+        <li>Item 03</li>
+      </ul>
+    </td>
+  </tr>
+</table>
+
+</body>
+</html>
